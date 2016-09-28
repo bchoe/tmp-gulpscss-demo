@@ -1,0 +1,32 @@
+h3 {
+  color: green; }
+
+body {
+  background: white; }
+
+h1 {
+  color: #F1F1F1; }
+
+div ul li {
+  color: red; }
+
+.borderbox {
+  border-top: 20px;
+  border-bottom: 10.5px;
+  border-left: 5px;
+  border-right: 10px;
+  border: solid; }
+
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }

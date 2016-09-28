@@ -1,0 +1,51 @@
+@import 'partial';
+
+$dark-color : white;
+
+body {
+  background: $dark-color;
+}
+
+h1 {
+ color: #F1F1F1;
+}
+
+div{
+  ul{
+    li{
+      color: red;
+    }
+  }
+}
+
+@mixin four-borders($base){
+  border-top: $base * 2;
+  border-bottom: $base + .5;
+  border-left: $base / 2;
+  border-right: $base;
+  border: solid;
+}
+.borderbox {
+  @include four-borders(10px);
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
